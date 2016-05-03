@@ -1,4 +1,6 @@
 gdp <- read.csv("data/data-1952.csv")
+new <- read.csv("data/data-1957.csv")
+gdp <- rbind(gdp, new) #pipes these together#
 
 gdp['gdp'] <- gdp$gdpPercap * gdp$pop
 
